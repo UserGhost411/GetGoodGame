@@ -77,7 +77,7 @@ const App = () => {
       <NavigationContainer>
         <StatusBar backgroundColor="#2c2f33" />
         <Stack.Navigator screenOptions={{ headerShown: "true" }}>
-          <Stack.Screen name="NAMA APP" component={BottomNavigator} options={{ headerShown: true, ...headerStyle }} />
+          <Stack.Screen name="GetGoodGame" component={BottomNavigator} options={{ headerShown: true, ...headerStyle }} />
           <Stack.Screen name="DetailGiveAway" component={DetailGiveAway} options={{ title: "Details", ...headerStyle, }} />
           <Stack.Screen name="DetailFreeGame" component={DetailFreeGame} options={{ title: "Detail Game", ...headerStyle, }} />
         </Stack.Navigator>
