@@ -18,7 +18,7 @@ const BottomNavigator = () => {
       screenOptions={() => ({
         tabBarActiveTintColor: "white",
         tabBarInactiveTintColor: "#ccc",
-        tabBarActiveBackgroundColor: '#2c2f33',
+        tabBarActiveBackgroundColor: '#23272A',
         tabBarInactiveBackgroundColor: '#2c2f33',
         tabBarStyle: { height: 65 },
         tabBarIconStyle: { marginTop: 10 },
