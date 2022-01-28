@@ -27,7 +27,8 @@ class FreeGames extends PureComponent {
   async fetchFreeGames(filter) {
     try {
       this.setState({ isLoading: true });
-      const hasil = await fetch("https://www.freetogame.com/api/games" + ((filter[0] != 'all') ? `?tag=${filter.join('.')}` : ''));
+      const url = ((filter[0] != 'all') ? `https://www.freetogame.com/api/filter?tag=${filter.join('.')}` : 'https://www.freetogame.com/api/games');
+      const hasil = await fetch(url);
       const json = await hasil.json();
       this.setState({ data: json });
     } catch (error) {
